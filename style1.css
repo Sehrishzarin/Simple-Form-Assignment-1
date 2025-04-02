@@ -1,0 +1,85 @@
+ body{ 
+    margin: 0;
+    padding: 0;
+    background-color: #50a4af; ;
+    font-family: sans-serif ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    
+    margin-top: 20px;
+    padding: 20px;
+    width: 50%;
+    border: 10px solid rgb(130, 218, 229);
+    border-radius: 10px;
+    background-color: #fffbfb; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-with-icon .material-icons {
+    position: absolute;
+    left: 10px;
+    color: #a7a4a4;
+}
+.input-with-icon input {
+    padding-left: 40px;
+    width: 100%;
+}
+input{
+    margin: 10px 0 ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 205, 205);
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+h1{
+    text-align: center;
+    color: rgb(13, 87, 184);
+    font-weight: 100;
+}
+.required::after {
+    content: " *";
+    color: red;
+}
+hr{
+    width: 100%;
+    margin: 10px 0;
+}
+.check{
+    color: rgb(43, 22, 161);
+}
+
+input[type="submit"]{
+    background-color: rgba(21, 6, 104, 0.925);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(13, 87, 184);
+}

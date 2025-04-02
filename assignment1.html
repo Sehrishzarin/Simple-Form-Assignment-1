@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">       
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Software Request</h1>
+            <hr>
+            <form>
+                <label class="required" for="name">Name </label>
+                <div class="input-with-icon">
+                    <i class="material-icons">attachment</i>
+                    <input type="text" name="name" id="name" >
+                </div>
+                
+                <label class="required" for="EmpID">Employer ID  </label>
+                <div class="input-with-icon">
+                    <i class="material-icons">badge</i>
+                    <input type="text" name="EmployerId" id="EmpID" >
+                </div>
+                
+                <label class="required" for="email">Email  </label>
+                <div class="input-with-icon">
+                    <i class="material-icons">email</i>
+                    <input type="email" name="email" id="email" >
+                </div>
+                
+                <label class="required" for="phone">Phone Number </label>
+                <div class="input-with-icon">
+                    <i class="material-icons">phone</i>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                
+                <label class="required">Which Software do you require?</label>
+                <div class="checkbox-group">
+                    <label  class="check"><input type="checkbox" name="Software" value="SoftwareA"> Software A</label>
+                    <label  class="check"><input type="checkbox" name="Software" value="SoftwareB"> Software B</label>
+                    <label  class="check"><input type="checkbox" name="Software" value="SoftwareC"> Software C</label>
+                </div>
+                <label class="required">How urgently do you need it?</label>
+                <div class="checkbox-group">
+                    <!-- updated the radio buttons so that only one can be selected at a time -->
+                    <label class="check check-2"><input type="radio" name="radio-btn"  > As soon as possible</label>
+                    <label class="check check-2"><input type="radio" name="radio-btn"  > with in 2 or 3 weeks</label>
+                    <label  class="check check-2"><input type="radio" name="radio-btn" > i'm in no hurry</label>
+                </div>
+                <input type="submit" value="Request">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
